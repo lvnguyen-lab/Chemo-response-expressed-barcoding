@@ -1,2 +1,8 @@
 # Chemo-response-expressed-barcoding
 Computational analysis for expressed cellular barcoding combined with scRNAseq for human breast PDTX models treated with chemotherapy
+
+Analysis of bulk response to treatment is performed with "tumor_volume_bulk_response.ipynb" script, which requires tumor volume over time excel sheets and outputs visualizations of growth curves and growth rate in the last week of treatment.
+
+Analysis of amplicon sequencing and assignment of clonal response to treatment is performed with "amplicon_analysis.ipynb" script. This script requires processed amplicon sequencing data and outputs data visualizations as well as a csv file containing all barcode clones with their responses to both paclitaxel and carboplatin treatment. If "parse_barcodes_for_scRNAseq.ipynb" has been run, the script also corrects for multiple integrations, removing all barcodes in a multiple integration set except for the one with the most sequencing reads.
+
+Analysis of barcodes that belong to multiple-integration sets and assignment of response to treatment to scRNAseq cells is performed with "parse_barcodes_for_scRNAseq.ipynb" script. This script requires csv files with all scRNAseq cells and their associated barcodes, as results from the "associate_barcodes_with_10x_cells.R" script published in Shin HJ et al., and a csv with all barcodes and their responses to treatment as output from the "amplicon_analysis.ipynb" script. This script outputs a summary of barcodes that were integrated together as well as csv files with all scRNAseq cells and their barcode-related metadata for addition to appropriate Seurat objects.
