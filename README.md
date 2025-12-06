@@ -1,5 +1,5 @@
 # Chemo-response-expressed-barcoding
-Computational analysis for expressed cellular barcoding combined with scRNAseq for human breast PDTX models treated with chemotherapy
+Computational analysis for expressed cellular barcoding combined with scRNAseq for human breast PDTX models treated with chemotherapy, related to manuscript by Kronheim S et al.
 
 Analysis of bulk response to treatment is performed with the "tumor_volume_bulk_response.ipynb" script, which requires tumor volume over time excel sheets and outputs visualizations of growth curves and growth rate in the last week of treatment.
 
