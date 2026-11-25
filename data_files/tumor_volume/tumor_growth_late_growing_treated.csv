@@ -1,0 +1,9 @@
+model,cohort,mouse,last_measurement_day,days_after_treatment_end
+AB040,Paclitaxel,M00021191,180,76
+AB040,Paclitaxel,M00021194,159,55
+IC07,Paclitaxel,M00021189,180,76
+IC07,Paclitaxel,M00021198,173,69
+IC07,Paclitaxel,M00021199,180,76
+IC07,Carboplatin,M00021186,165,61
+IC07,Carboplatin,M00021190,180,76
+IC07,Carboplatin,M00021197,139,35
